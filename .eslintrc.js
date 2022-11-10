@@ -14,5 +14,10 @@ module.exports = {
     'class-methods-use-this': 'off',
     'linebreak-style': 'off',
     'padded-blocks': 'off',
+    'space-before-blocks': 'off',
+    'consistent-return': 'off',
+    'no-promise-executor-return': 'off',
+    'no-const-assign': 'off',
+    camelcase: 'off',
   },
 };
