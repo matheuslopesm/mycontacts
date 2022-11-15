@@ -3,11 +3,14 @@ const { Client } = require('pg');
 const client = new Client({
   host: 'localhost',
   port: 5432,
-  user: 'matheus',
-  password: 'matheus',
+  user: 'postgres',
+  password: 'postgre123',
   database: 'mycontacts',
 });
 
 client.connect();
 
-// client.query('SELECT * FROM contacts');
+exports.query = async (query, values) => {
+  const { rows } = await client.query(query, values);
+  return rows;
+};
