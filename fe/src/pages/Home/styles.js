@@ -16,6 +16,7 @@ export const InputSearchContainer = styled.div`
     box-shadow: 8px 4px 18px rgba(0, 0, 0, 0.04);
     outline: 0;
     padding: 0 16px;
+    font-size: 16px;
 
     &::placeholder{
       color: #BCBCBC;
