@@ -53,7 +53,12 @@ export default function Home() {
   );
 }
 
-fetch('http://localhost:3001/categories')
+fetch('http://localhost:3001/categories', {
+  method: 'DELETE',
+  headers: new Headers({
+    'X-App-ID': '123',
+  }),
+})
   .then((response) => {
     console.log('response', response);
   })
