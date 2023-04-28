@@ -20,11 +20,30 @@ export default class EventManager {
       listener(payload);
     });
   }
+
+  removeListener(event, listenerToRemove) {
+    const listeners = this.listeners[event];
+
+    if (!listeners) {
+      return;
+    }
+
+    const filteredListeners = listeners.filter(
+      (listener) => listener !== listenerToRemove,
+    );
+
+    this.listeners[event] = filteredListeners;
+  }
 }
 
 const toastEventManager = new EventManager();
-toastEventManager.on('addtoast', (payload) => {
+
+function addToast(payload) {
   console.log('addtoast listener', (payload));
-});
+}
+
+toastEventManager.on('addtoast', addToast);
 
 toastEventManager.emit('addtoast', { type: 'danger', text: 'Texto' });
+
+toastEventManager.removeListener('addtoast', addToast);
