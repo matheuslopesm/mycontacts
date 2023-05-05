@@ -26,6 +26,7 @@ import magnifierQuestion from '../../assets/images/magnifier-question.svg';
 
 import Loader from '../../components/Loader';
 import Button from '../../components/Button';
+import Modal from '../../components/Modal';
 
 import ContactsService from '../../services/ContactsService';
 
@@ -44,7 +45,6 @@ export default function Home() {
       setIsLoading(true);
 
       const contactsList = await ContactsService.listContacts(orderBy);
-      // const contactsList = []; await ContactsService.listContacts(orderBy);
 
       setHasError(false);
       setContacts(contactsList);
@@ -76,6 +76,17 @@ export default function Home() {
   return (
     <Container>
       <Loader isLoading={isLoading} />
+
+      <Modal
+        danger
+        title="Tem certeza que deseja remover o contato Matheus?"
+        confirmLabel="Deletar"
+        onCancel={() => alert('Cancelou')}
+        onConfirm={() => alert('Confirmou')}
+      >
+
+        <h2>sdjidjasjdsd</h2>
+      </Modal>
 
       {contacts.length > 0 && (
         <InputSearchContainer>
