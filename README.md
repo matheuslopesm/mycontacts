@@ -24,7 +24,7 @@ Todas as tecnologias utilizadas foram:
 
 # Final Result 🔥 
 
-
+<img src="fe\src\assets\images\web-version.png" alt="Web Version" />
 
 ## Starting 
 
