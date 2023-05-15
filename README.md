@@ -1,4 +1,4 @@
-# MyContacts 🚧 Em construção
+# MyContacts
 
 Sistema web feito com React, NodeJS e PostgreSQL com o objetivo de armazenar os contatos de uma pessoa, tendo cada contato seus dados pessoais. As entidades do projeto são **Contatos** e **Categorias**.
 
@@ -24,7 +24,7 @@ Todas as tecnologias utilizadas foram:
 
 # Final Result 🔥 
 
-🚧 **Em construção** 🚧
+
 
 ## Starting 
 
