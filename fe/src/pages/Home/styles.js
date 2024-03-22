@@ -41,8 +41,9 @@ export const Header = styled.header`
     color: ${({ theme }) => theme.colors.primary.main};
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
     border: 2px solid ${({ theme }) => theme.colors.primary.main};
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 4px;
     transition: all 0.2s ease-in;
 
